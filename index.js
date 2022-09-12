@@ -23,6 +23,7 @@ puppeteer.use(AdblockerPlugin({ blockTrackers: true }));
       timeout: 5000,
     };
     const browser = await puppeteer.launch({
+			executablePath: '/nix/store/z0b6n2bqlssqwd9va76mb8flcwwzywc9-chromium-98.0.4758.102/bin/chromium',
       headless: false,
       ignoreHTTPSErrors: true,
       slowMo: 0,
